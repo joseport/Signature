@@ -1,0 +1,43 @@
+# Signature Add-in for Business Central
+
+This project is a custom add-in for Microsoft Dynamics 365 Business Central that allows users to capture and store signatures directly within the application.
+
+## Features
+
+- Capture signatures using a signature pad.
+- Store signatures as images in the Business Central database.
+- Integrate the signature pad into the Sales Order page.
+
+## Setup
+
+### Prerequisites
+
+- Microsoft Dynamics 365 Business Central
+- Visual Studio Code with AL Language extension
+
+### Installation
+
+1. Clone the repository to your local machine.
+2. Open the project in Visual Studio Code.
+3. Update the `launch.json` file with your Business Central environment details.
+4. Publish the extension to your Business Central environment.
+
+### Usage
+
+1. Navigate to the Sales Order page in Business Central.
+2. Use the signature pad to capture a customer's signature.
+3. The signature will be saved and displayed on the Sales Order page.
+
+### Project Structure
+
+- `src/`: Contains the AL code for the extension.
+  - `controladdin/`: Contains the control add-in for the signature pad.
+  - `codeunit/`: Contains codeunits used in the extension.
+  - `pageextension/`: Contains page extensions for integrating the signature pad.
+  - `tableextension/`: Contains table extensions for storing signatures.
+- `javascript/`: Contains JavaScript files for the signature pad functionality.
+- `css/`: Contains CSS files for styling the signature pad.
+
+### License
+
+This project is licensed under the MIT License.
