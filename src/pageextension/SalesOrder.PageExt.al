@@ -4,7 +4,7 @@ pageextension 50000 SalesOrder extends "Sales Order"
     {
         addafter(Control1900201301)
         {
-            group("SGN Signature Group")
+            group("Signature Group")
             {
                 usercontrol("SignaturePad"; "SignaturePad")
                 {
@@ -23,7 +23,7 @@ pageextension 50000 SalesOrder extends "Sales Order"
                 }
 
             }
-            field("SGN Signature"; Rec.Signature)
+            field("Signature"; Rec.Signature)
             {
                 Caption = 'Customer Signature';
                 ApplicationArea = All;
